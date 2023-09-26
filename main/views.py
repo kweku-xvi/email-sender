@@ -10,6 +10,7 @@ def email(request):
         if form.is_valid():
             subject = form.cleaned_data['subject']
             email_from = form.cleaned_data['sender_mail']
+            # email_from = settings.EMAIL_HOST_USER
             recipient = form.cleaned_data['recipient_mail']
             recipient_list = [recipient]
             message = form.cleaned_data['message']
