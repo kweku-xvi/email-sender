@@ -127,7 +127,7 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "" # add your email
-EMAIL_HOST_PASSWORD = "" # add your email password
+EMAIL_HOST_PASSWORD = "" # add your email password / app password
 
 
 # Default primary key field type
