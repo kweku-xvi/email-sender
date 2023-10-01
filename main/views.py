@@ -13,7 +13,7 @@ def email(request):
             recipient_email = form.cleaned_data['recipient_mail']
             message = form.cleaned_data['message']
 
-            client = Courier(auth_token="pk_prod_P6KGDK2MFM44YHQYXE0TMXQE1BW0")
+            client = Courier(auth_token="") # your auth token 
 
             resp = client.send_message(
                 message={
